@@ -6,3 +6,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # https://crypto-app-aitorqc.vercel.app
 
+(https://github.com/aitorqc/crypto-app/blob/main/public/home.png)
+

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function CoinCard({ id, name, img, symbol, price, currencySymbol="eur" }) {
     return (
-        <Link to={`/coins/${id}`} target={"blank"}>
+        <Link to={`/coins/${id}`}>
             <VStack w={"52"} shadow={"lg"}
                 p={"8"} borderRadius={"lg"} transition={"all .3s"}
                 m={"4"} background={"#d2d1c7"}

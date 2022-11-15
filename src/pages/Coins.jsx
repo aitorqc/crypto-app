@@ -69,7 +69,7 @@ export default function Coins() {
                             {
                                 btns.map((item, index) => (
                                     <Button key={index}
-                                        bgColor={"blackAlpha.900"} color={"white"}
+                                        bgColor={(index + 1) === page ? "blackAlpha.300" : "blackAlpha.900"} color={"white"}
                                         onClick={() => changePage(index + 1)}>{index + 1}</Button>
                                 ))
                             }

@@ -17,7 +17,7 @@ export default function CoinDetails() {
   const [days, setDays] = useState("24h");
   const [chartArray, setChartArray] = useState([]);
 
-  const currencySymbol = currency === "usd" ? "$" : currency === "eur" ? "€" : "¥";
+  const currencySymbol = (currency === "usd") ? "$" : (currency === "eur") ? "€" : "¥";
 
   const btns = ["24h", "7d", "14d", "30d", "60d", "200d", "365d", "max"];
 

@@ -11,14 +11,16 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/coins" element={<Coins />} />
-        <Route exact path="/exchanges" element={<Exchanges />} />
-        <Route exact path="/coins/:id" element={<CoinDetails />} />
-        <Route
-          path="*"
-          element={<Navigate to="/home" replace />}
-        />
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route exact path="/coins" element={<Coins />} />
+          <Route exact path="/exchanges" element={<Exchanges />} />
+          <Route exact path="/coins/:id" element={<CoinDetails />} />
+          <Route
+            path="*"
+            element={<Navigate to="/home" replace />}
+          />
+        </Route>
       </Routes>
     </>
   );
